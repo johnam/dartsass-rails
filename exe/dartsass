@@ -8,6 +8,7 @@ platform_string = "#{platform_info.cpu}-#{platform_info.os}"
 
 exe_path = 
   case platform_string
+  when "x86_64-linux" then File.join(__dir__, "x86_64-linux/sass")
   when "aarch64-linux" then File.join(__dir__, "aarch64-linux/sass")
   when "arm64-darwin" then File.join(__dir__, "arm64-darwin/sass")
   when /darwin\z/  then File.join(__dir__, "darwin/sass")

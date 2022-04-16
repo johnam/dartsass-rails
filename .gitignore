@@ -14,3 +14,4 @@
 .idea/
 **/tmp/
 /exe/*/tailwindcss
+.DS_Store
